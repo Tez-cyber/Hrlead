@@ -3,7 +3,7 @@ import { Container } from './container'
 
 export const About = () => {
     return (
-        <div className='my-[64px] mx-10'>
+        <div className='my-[64px] mx-10' id='about'>
             <Container>
                 <section>
                     <p className='text-4xl font-agdasima mb-3'>Get to <span className='text-blue'>Know us</span></p>

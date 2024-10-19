@@ -6,6 +6,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  scroll-behavior: smooth;
 }
 
 
@@ -22,23 +23,27 @@ body {
   .content-wrapper {
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   }
+
   .card {
-    @apply flex flex-col border border-solid border-[#f0f0f0]
-      rounded-[8px] bg-white py-[2.8vw] px-[3.8vw] relative top-0
-      transition-all duration-[.3s] ease-in-out mx-5 mt-3
+    @apply flex flex-col border border-solid border-[#f0f0f0] rounded-[8px] bg-white py-[2.8vw] px-[3.8vw] relative top-0 transition-all duration-[.3s] ease-in-out mx-5 mt-3
   }
+
   .about_cardWrapper {
-    @apply grid grid-cols-2 p-5 rounded-md md:grid-cols-4 
+    @apply grid grid-cols-2 p-5 rounded-md md:grid-cols-4
   }
+
   .about_card {
     @apply bg-white mx-2 my-2 rounded-md px-5 h-[100px] flex flex-col justify-center
   }
+
   .about_card h2 {
     @apply text-4xl font-extrabold text-blue font-agdasima
   }
+
   .about_card p {
     @apply text-sm
   }
+
   .card:hover {
     box-shadow: rgba(0, 0, 0, .45) 0px 25px 20px -20px;
     cursor: pointer;

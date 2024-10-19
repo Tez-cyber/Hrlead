@@ -2,7 +2,7 @@ import { Card } from './card'
 
 export const Services = () => {
     return (
-        <div>
+        <div id='services'>
             <div className="tit_wrap overflow-hidden">
                 <span className="font-agdasima text-xl block text-center text-blue uppercase font-semibold
                 overflow-hidden

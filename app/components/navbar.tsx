@@ -3,12 +3,13 @@ import { Dispatch, SetStateAction, useRef, useState } from "react"
 import { motion } from "framer-motion"
 import { Container } from "./container"
 import { MobileNav } from "./mobileNav"
+import Link from "next/link"
 
 
 export const Navbar = () => {
     return (
         <>
-            <motion.div className="bg-neutral-100 h-full">
+            <motion.div className="bg-neutral-100 sticky top-0 z-20">
                 <Container className=" flex justify-between items-center h-[4.8rem] px-10 z-30">
                     <motion.section
                         className="font-agdasima">
@@ -49,11 +50,10 @@ const SlideTabs = () => {
             className="relative mx-auto flex w-fit rounded-full border-2 
              bg-white p-1"
         >
-            <Tab setPosition={setPosition}>Home</Tab>
-            <Tab setPosition={setPosition}>About</Tab>
-            <Tab setPosition={setPosition}>Discover</Tab>
-            <Tab setPosition={setPosition}>Services</Tab>
-            <Tab setPosition={setPosition}>Contact us</Tab>
+            <Tab href="#" setPosition={setPosition}>Home</Tab>
+            <Tab href="#about" setPosition={setPosition}>About</Tab>
+            <Tab href="#discover" setPosition={setPosition}>Discover</Tab>
+            <Tab href="#services" setPosition={setPosition}>Services</Tab>
             <Cursor position={position} />
         </ul>
     )
@@ -63,10 +63,11 @@ const SlideTabs = () => {
 // ==================
 type TabProps = {
     children: React.ReactNode;
+    href: string
     setPosition: Dispatch<SetStateAction<Position>>
 }
 const Tab = (
-    { children, setPosition }: TabProps
+    { children, href, setPosition }: TabProps
 ) => {
     const ref = useRef<null | HTMLLIElement>(null)
     return (
@@ -87,7 +88,9 @@ const Tab = (
             py-1.5 text-xs uppercase text-white mix-blend-difference
             md:px-5 md:py-3 md:text-base
         ">
-            {children}
+            <Link href={href}>
+                {children}
+            </Link>
         </li>
     )
 }

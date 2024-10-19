@@ -73,7 +73,7 @@ export const MobileNav = () => {
                         {
                             navlinks.map(link => (
                                 <div className="" key={link.title}>
-                                    <Link href={link.url}>
+                                    <Link href={link.url} onClick={() => setOpenNav(!openNav)}>
                                         {link.title}
                                     </Link>
                                 </div>

@@ -2,7 +2,7 @@
 export const navlinks = [
     { url: "#", title: "Home" },
     { url: "#about", title: "About" },
-    { url: "#portfolio", title: "Portfolio" },
-    { url: "#contact", title: "Contact" }
+    { url: "#discover", title: "Discover" },
+    { url: "#services", title: "Services" }
 ]
 
