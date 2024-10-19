@@ -2,11 +2,7 @@
 import Link from "next/link"
 import { IconContext } from "react-icons"
 import { 
-    IoMailOutline, IoNotifications,
-    IoChevronForward, IoPieChart, 
-    IoApps, IoNewspaper, IoCard,
-    IoColorFill,
-    IoChevronForwardCircle
+    IoMailOutline
 } from "react-icons/io5"
 import { Container } from "./container"
 
