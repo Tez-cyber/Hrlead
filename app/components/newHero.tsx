@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 export const NewHero = () => {
     return (
-        <div className='mt-10'>
-            <Container className='flex flex-col mx-14 md:mx-auto lg:flex-row'>
+        <div className='mt-10 mx-10 md:mx-0'>
+            <Container className='flex flex-col lg:flex-row'>
                 {/* =============First section */}
                 <section className=" flex flex-col gap-4">
                     <div>
