@@ -11,7 +11,12 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        blue: "#2e4e78"
       },
+      fontFamily: {
+        agdasima: "Agdasima"
+      }
+
     },
   },
   plugins: [],
