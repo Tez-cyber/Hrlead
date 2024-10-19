@@ -25,7 +25,7 @@ body {
   .card {
     @apply flex flex-col border border-solid border-[#f0f0f0]
       rounded-[8px] bg-white py-[2.8vw] px-[3.8vw] relative top-0
-      transition-all duration-[.3s] ease-in-out mx-5
+      transition-all duration-[.3s] ease-in-out mx-5 mt-3
   }
   .about_cardWrapper {
     @apply grid grid-cols-2 p-5 rounded-md md:grid-cols-4 

@@ -4,41 +4,14 @@ import { motion } from "framer-motion"
 import { Container } from "./container"
 import { MobileNav } from "./mobileNav"
 
-let easing = [0.6, -0.05, 0.01, 0.99]
-const stagger = {
-    animate: {
-        transition: {
-            delayChildren: .4,
-            staggerChildren: .2,
-            staggerDirection: 1
-        }
-    }
-}
-const header = {
-    initial: {
-        y: -60,
-        opacity: 0,
-        transition: {
-            duration: .05,
-            ease: easing
-        }
-    },
-    animate: {
-        y: 0,
-        opacity: 1,
-        trasition: {
-            duration: .6,
-            ease: easing
-        }
-    }
-}
+
 export const Navbar = () => {
     return (
         <>
-            <motion.div variants={stagger} className="bg-neutral-100 ">
+            <motion.div className="bg-neutral-100 ">
                 <Container className=" flex justify-between items-center h-[4.8rem] px-10">
                     <motion.section
-                        variants={header} className="font-agdasima">
+                        className="font-agdasima">
                         <span className="text-blue font-[700] text-3xl agdasima">HRLead</span>
                         <span className="h-2 w-2 bg-blue inline-block rounded-full"></span>
                     </motion.section>
