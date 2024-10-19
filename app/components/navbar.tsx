@@ -8,8 +8,8 @@ import { MobileNav } from "./mobileNav"
 export const Navbar = () => {
     return (
         <>
-            <motion.div className="bg-neutral-100 ">
-                <Container className=" flex justify-between items-center h-[4.8rem] px-10">
+            <motion.div className="bg-neutral-100 h-full">
+                <Container className=" flex justify-between items-center h-[4.8rem] px-10 z-30">
                     <motion.section
                         className="font-agdasima">
                         <span className="text-blue font-[700] text-3xl agdasima">HRLead</span>
